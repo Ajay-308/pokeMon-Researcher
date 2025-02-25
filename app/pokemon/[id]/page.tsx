@@ -43,8 +43,8 @@ export default function PokemonDetail() {
           types: details.types.map(
             (t: { type: { name: string } }) => t.type.name
           ),
-          height: details.height,
-          weight: details.weight,
+          height: details.height / 10, // height and weight are more as compared
+          weight: details.weight / 10,
           abilities: details.abilities.map(
             (a: { ability: { name: string } }) => a.ability.name
           ),
