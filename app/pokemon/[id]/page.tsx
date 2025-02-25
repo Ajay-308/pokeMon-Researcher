@@ -84,7 +84,7 @@ export default function PokemonDetail() {
       <div className="max-w-4xl mx-auto px-4">
         <button
           onClick={() => router.back()}
-          className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white mb-6 transition-colors"
+          className="flex items-center bg-green-600 text-white px-4 py-2 rounded-lg mb-4"
         >
           <FaArrowLeft className="mr-2" />
           Back to Home page
