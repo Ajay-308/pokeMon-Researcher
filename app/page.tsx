@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, cache } from "react";
+import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";

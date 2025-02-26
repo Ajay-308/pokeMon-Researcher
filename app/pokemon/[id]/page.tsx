@@ -29,7 +29,7 @@ export default function PokemonDetail() {
     const fetchPokemonDetails = async () => {
       try {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`, {
-          next: { revalidate: 60 },
+          next: { revalidate: 0 },
         });
         if (!res.ok) {
           console.error("Error fetching Pokémon details:", res.statusText);
