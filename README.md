@@ -1,21 +1,20 @@
 Clone the Repository
 1. Clone the repository to your local machine:
 ```bash
-   git clone https://github.com/Ajay-308/pokeMon-Researcher
+git clone https://github.com/Ajay-308/pokeMon-Researcher
 ```
 2.Navigate to the project directory:
 ```bash
-   cd pokeMon-Researcher
+cd pokeMon-Researcher
 ```
 3. Install any necessary dependencies specified in the documentation.
   ```bash
-    npm instal
+  npm instal
   ```
-
 4. start frontend
-   ```bash
-   npm run dev
-   ```
+ ```bash
+ npm run dev
+ ```
 
 
 
