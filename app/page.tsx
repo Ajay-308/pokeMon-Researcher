@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, cache } from "react";
 import { FaSearch } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +21,11 @@ export default function Home() {
   useEffect(() => {
     const fetchPokemons = async () => {
       try {
-        const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=200");
+        const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=200", {
+          // fresh data every hour and cache it for 1 hour
+          next: { revalidate: 3600 },
+        });
+        // const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=200");
         if (!res.ok) {
           console.error("Error fetching Pokémon data:", res.statusText);
           return;
