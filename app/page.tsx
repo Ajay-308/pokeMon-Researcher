@@ -96,7 +96,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
             {filteringPokemons.map((pokemon) => (
               <Link
-                href={`/pokemon/${pokemon.id}`}
+                href={`pages/pokemon/${pokemon.id}`}
                 key={pokemon.id}
                 className="transform hover:scale-105 transition-transform duration-200"
               >
